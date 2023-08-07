@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "HankenVariable";
+        src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "HankenBold";
+        src: url("assets/fonts/static/HankenGrotesk-Bold.ttf")
+          format("truetype");
+      }
+      body {
+        font-family: "HankenBold", sans-serif;
+      }
+      span{
+        align-items: end;
+        text-align: right;
+        display: inline-block;
+      }
+
+      .conteiner {
+        display: flex;
+      }
+
+      .principal {
+        background-color: rgba(88, 88, 252, 0.877);
+        display: flex;
+        width: 320px;
+        height: 430px;
+        border-radius: 30px;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        flex-direction: column;
+        align-items: center;
+      }
+      .seu-resultado {
+        margin-top: 45px;
+        color: white;
+        font-size: 20px;
+        opacity: 0.8;
+      }
+      .resultado-numero {
+        background-color: rgba(76, 57, 247, 0.26);
+        text-align: center;
+        margin: auto;
+        padding: 15px;
+        border-radius: 50%;
+        border-width: 1px;
+        border-color: black;
+        width: 120px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+      }
+      .texto-resultado {
+        text-align: center;
+        width: 214px;
+        margin-top: auto;
+        margin-bottom: 45px;
+        color: white;
+      }
+      .sete {
+        font-size: 30px;
+        color: white;
+      }
+      .of-100 {
+        color: white;
+        opacity: 0.6;
+      }
+
+      .summary {
+        background-color: white;
+        display: flex;
+        width: 320px;
+        height: 430px;
+        border-radius: 30px;
+        border-width: 1px;
+        border-color: white;
+        border-style: solid;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        box-shadow: 1px 1px 1px;
+      }
+      .text-summary {
+        margin-top: 45px;    
+        text-align: left;
+        width: 300px;
+
+      }
+      .reaction {
+        background-color: rgba(253, 103, 103, 0.24);
+        margin-bottom: 25px;
+        width: 300px;
+        border-radius: 15px;
+        padding: 6px;
+        color: red;
+
+      }
+      .verbal {
+        background-color: rgba(20, 255, 20, 0.247);
+        margin-bottom: 25px;
+        width: 300px;
+        border-radius: 15px;
+        padding: 6px;
+        color: green;
+      }
+      .memory {
+        background-color: rgba(255, 255, 0, 0.151);
+        margin-bottom: 25px;
+        width: 300px;
+        border-radius: 15px;
+        padding: 6px;
+        color: rgb(173, 173, 106);
+      }
+      .visual {
+        background-color: rgba(70, 97, 218, 0.233);
+        margin-bottom: 50px;
+        width: 300px;
+        border-radius: 15px;
+        padding: 6px;
+        color: blue;
+      }
+      .button{
+        color: white;
+        padding: 10px;
+        width: 200px;
+        border-radius: 15px;
+        border: none;
+        background-color: blue
+      }
+      .button:hover{
+        cursor: pointer;
+        opacity: 0.8;
+        background-color: rgba(71, 21, 255, 0.973);
+        transition: 1s;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="conteiner">
+      <div class="principal">
+        <div class="seu-resultado">Your Result</div>
+        <div class="resultado-numero">
+          <p class="sete">76</p>
+          <p class="of-100">of 100</p>
+        </div>
+        <div class="texto-resultado">
+          Great<br />Your scored higher than 65% of the people who have taken
+          these tests.
+        </div>
+      </div>
+
+      <div class="summary">
+        <p class="text-summary">Summary</p>
+        <div class="reaction">
+          <img src="assets/images/icon-reaction.svg" alt="" />
+          reaction <span>80/100</span>
+        </div>
+        <div class="memory">
+          <img src="assets/images/icon-memory.svg" alt="" />
+          memory <span>80/100</span>
+        </div>
+        <div class="verbal">
+          <img src="assets/images/icon-verbal.svg" alt="" />
+          verbal <span>80/100</span>
+        </div>
+        <div class="visual">
+          <img src="assets/images/icon-visual.svg" alt="" />
+          visual <span>80/100</span>
+        </div>
+        <button class="button">Continue</button>
+      </div>
+    </main>
+  </body>
+</html>

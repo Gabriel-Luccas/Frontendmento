@@ -1,0 +1,1 @@
+ aprende uma engine, pelo q tu disse eu recomendaria Godot, o script q usa parece python e as cenas e nodes são semelhantes ao front end
