@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Isso garante que o conteúdo seja centralizado verticalmente na tela */
+  margin: 0; /* Remove margens padrão do corpo */
+  color: white;
+  background-color: hsl(217, 54%, 11%);
+}
+.Main {
+  background-color: hsl(216, 50%, 16%);
+  width: 270px;
+  height: 500px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.image {
+  width: 100%; /* A imagem se ajustará automaticamente à largura do contêiner */
+  max-height: 100%; /* A imagem também se ajustará automaticamente à altura do contêiner, se necessário */
+}
+.nft02 {
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  font-family: "Outfit", sans-serif;
+}
+.nft01 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 10px;
+}
+.price-days {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.diamond {
+  align-self: left;
+  align-items: center;
+  margin-left: -25px; /* Adicione esta linha para alinhar à esquerda */
+}
+.clock {
+  align-self: left;
+  align-items: center;
+  margin-left: 25px; /* Adicione esta linha para alinhar à esquerda */
+}
+.blue-text {
+  color: rgb(0, 225, 255);
+  text-align: left;
+  font-size: 17px;
+  margin-left: auto;
+}
+
+.white-text {
+  color: white;
+  text-align: left;
+  font-size: 17px;
+}
+.face {
+  width: 25px;
+  height: 25px;
+  border: 10px, solid;
+  border-color: white;
+}
+.creator {
+  margin: 10px;
+}
+.blue-text-container {
+  display: flex;
+  align-items: center;
+}
+.price-days {
+  margin: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px; /* Ajuste conforme necessário para o espaçamento desejado */
+}
+.creator {
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.link:hover {
+  color: hsl(178, 100%, 50%);
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.nft02:hover {
+  color: hsl(178, 100%, 50%);
+}
+.nft02:hover .image {
+  filter: hue-rotate(
+    178deg
+  ); 
+}
