@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Isso garante que o conteúdo seja centralizado verticalmente na tela */
+        margin: 0; /* Remove margens padrão do corpo */
+        color: white;
+      }
+      .Main {
+        background-color: hsl(216, 50%, 16%);
+        width: 270px;
+        height: 500px;
+        padding: 25px;
+        border-radius: 10px;
+      }
+      .image {
+        width: 100%; /* A imagem se ajustará automaticamente à largura do contêiner */
+        max-height: 100%; /* A imagem também se ajustará automaticamente à altura do contêiner, se necessário */
+      }
+      .nft02 {
+        margin: 10px;
+        font-size: 18px;
+        color: white;
+        text-align: left;
+        font-family: "Outfit", sans-serif;
+      }
+      .nft01 {
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        margin: 10px;
+      }
+      .price-days {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .blue-text {
+        color: rgb(0, 225, 255);
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .white-text {
+        color: white;
+        text-align: left;
+        font-size: 14px;
+      }
+      .face {
+        width: 30px;
+        height: 30px;
+        border: 10px, solid;
+        border-color: white;
+      }
+      .creator {
+        margin: 10px;
+      }
+      .blue-text-container {
+        display: flex;
+        align-items: center;
+      }
+      .price-days {
+        margin: 20px;
+        border-bottom: 1px solid white;
+        padding-bottom: 15px; /* Ajuste conforme necessário para o espaçamento desejado */
+      }
+      .creator {
+        font-size: 14px;
+        margin-top: 60px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Main">
+      <div class="NFt-img">
+        <img class="image" src="images/image-equilibrium.jpg" alt="cool nft" />
+      </div>
+
+      <div class="nft02">Equilibrium #3429</div>
+
+      <div class="nft01">
+        Our Equilibrium collection promotes balance and calm.
+      </div>
+
+      <div class="price-days">
+        <div class="blue-text-container">
+          <img class="diamond" src="images/icon-ethereum.svg" alt="" />
+          <span class="blue-text">0.041 ETH</span>
+        </div>
+        <div class="white-text-container">
+          <img class="diamond" src="images/icon-clock.svg" alt="" />
+          <span class="white-text">3 days left</span>
+        </div>
+      </div>
+
+      <div class="creator">
+        <img class="face" src="images/image-avatar.png" alt="" />
+        <span class="crator-text">Creation of Jules Wyvern</span>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
