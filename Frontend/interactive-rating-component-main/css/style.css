@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/*reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif; /** todos os contudsos terão essa fonte ja que foi colocada em "*" */
+}
+
+/* variavies */
+:root {
+  --orange: #fb7413;
+  --white: #ffffff;
+  --lightGrey: #959eac;
+  --mediumGrey: #7c8798;
+  --darkBlue: #252d37;
+  --veryDarkBlue: #121417;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--veryDarkBlue);
+}
+.card {
+  width: 400px;
+  padding: 30px 32px;
+  border-radius: 30px;
+  background-image: radial-gradient(circle at 50% -50%, #232a32, #171e28);
+  position: relative;
+}
+.card.sstar {
+  width: 49px;
+  height: 49px;
+  border-radius: 100%;
+  background-color: var(--darkBlue);
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.card h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 16px;
+}
+.card p {
+  font-size: 15px;
+  color: var(--lightGrey);
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+.card .rates {
+  display: flex;
+  justify-content: space-between;
+}
+.card .rates button {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: var(--darkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: var(--mediumGrey);
+  transition-duration: 200ms;
+  cursor: pointer;
+  position: relative;
+}
+.card .rates button:hover {
+  background-color: var(--orange);
+  color: white;
+  cursor: pointer;
+}
+.card .rates button:active {
+  background-color: var(--mediumGrey);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.card #bti {
+  width: 100%;
+  height: 48px;
+  background-color: var(--orange);
+  border-radius: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  transition-duration: 200ms;
+}
+.card #bti:hover {
+  background-color: white;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.thanks {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 50% -50%, #232a32, #171e28);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 200ms;
+}
+.card .thanks.active {
+  opacity: 1;
+  visibility: visible;
+}
+.card .thanks img {
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.card .thanks span {
+  display: inline-block;
+  line-height: 32px;
+  font-size: 15px;
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  padding: 0 16px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.card .thanks span div {
+  display: inline;
+}
+.card .thanks p {
+  padding: 0 30px;
+  text-align: center;
+}
+.thanks:active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0 24px;
+  }
+  .card {
+    width: 100%;
+    padding: 22px;
+  }
+  .card .star {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .card p {
+    margin-bottom: 20px;
+  }
+  .card .rates button {
+    width: 40px;
+    height: 40px;
+  }
+  .card #btn {
+    height: 45px;
+    margin-top: 20px;
+  }
+  .card .thanks img {
+    height: 95px;
+  }
+  .card .thanks span {
+    margin-bottom: 20px;
+  }
+  .card .thanks p {
+    padding: 0 24px;
+  }
+}
+.attribution {
+  display: none;
+}
