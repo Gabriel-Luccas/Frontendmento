@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size:  18px;
+}
+body {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+  background-image: url(https://digitshack.com/codepen/mentor4/bg-pattern-top.svg), url(https://digitshack.com/codepen/mentor4/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 48vw bottom 40vh,
+      left 45vw top 44vh;
+}
+
+
+
+:root {
+  --Dark-gray: #969696;
+  --Dark-cyan: #19a2ae;
+  --Very-dark-desaturated-blue: #2d3248;
+  --Dark-grayish-blue: #6a6f81;
+}
+
+.main{
+    background: linear-gradient(to bottom, var(--Very-dark-desaturated-blue) 35%, white 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.img-in{
+  width: 95px;
+  height: 95px;
+  border-radius: 100%;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  border: 5px  solid  white;
+}
+
+.name{
+  font-size: 18px ;
+  display: inline;
+}
+.age{
+  font-size: 18px ;
+  display: inline;
+  color: var(--Dark-gray);
+}
+.city{
+  font-size: 15px;
+  color: var(--Dark-gray);
+}
+.info{
+  margin: 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(173, 170, 170, 0.5);
+  width: 300px;
+}
+.followers,
+.likes,
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5px 0px; /
+}
+
+.info .followers p,
+.info .likes p,
+.info .photos p {
+  color: var(--Dark-gray);
+  margin: 5px 0; /* Adicionando margem para espaçamento entre os elementos de .info */
+}
+
+
+
+
