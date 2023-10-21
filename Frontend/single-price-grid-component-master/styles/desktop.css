@@ -1,0 +1,115 @@
+/* desktop */
+
+:root {
+  /* Primary */
+  --Cyan: #2ab2af;
+  --Bright-Yellow: #c0df34;
+
+  /* Neutral */
+
+  --Light-Gray: #e5eff5;
+  --Grayish-Blue: #98a6bd;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #d7e0f0de;
+}
+
+@media screen and (min-width: 1440px){
+  .top {
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    width: 40vw;
+    padding: 35px;
+  }
+  .join {
+    color: #2ab2af;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .day-30 {
+    color: #c0df34;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .defaut {
+    color: #98a6bd;
+    line-height: 25px;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #fff;
+    width: 40vw;
+    height: 40vh;
+    padding: 35px;
+    background-color: #2ab2af;
+  }
+  .month {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .bottom > .price > span {
+    color: #5494fa;
+    font-weight: bold;
+    
+  }
+  .price {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .defaut02{
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  .button{
+    margin-top: 40px;
+    display: inline-block;
+    width: 500px;
+  }
+  .sing{
+    background-color: #c0df34;
+    margin: auto;
+    margin-top: 50px;
+    color: #fff;
+    width: 300px;
+    height: 55px;
+    font-family: 22px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: none;
+  }
+  .why{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .part2, .part1{
+    display: block;
+    margin-top: 40px;
+    width: 300px;
+
+  }
+  footer{
+    margin-top: 190px;
+  }
+
+}

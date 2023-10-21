@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* mobile */
+
+:root {
+  /* Primary */
+  --Cyan: #2ab2af;
+  --Bright-Yellow: #c0df34;
+
+  /* Neutral */
+
+  --Light-Gray: #e5eff5;
+  --Grayish-Blue: #98a6bd;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #d7e0f0de;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1440px) {
+  .top {
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    width: 55vw;
+    padding: 35px;
+  }
+  .join {
+    color: #2ab2af;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .day-30 {
+    color: #c0df34;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .defaut {
+    color: #98a6bd;
+    line-height: 25px;
+  }
+  .bottom {
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    width: 55vw;
+    height: 50vh;
+    padding: 35px;
+    background-color: #2ab2af;
+  }
+  .month {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .bottom > .price > span {
+    color: #5494fa;
+    font-weight: bold;
+  }
+  .price {
+    display: block;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .defaut02{
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  .button{
+    display: flex;
+  }
+  .sing{
+    background-color: #c0df34;
+    margin: auto;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: none;
+  }
+  .why{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 1px;
+  }
+  .part2{
+    display:block;
+  }
+  footer{
+    margin-top: 190px;
+  }
+
+}
