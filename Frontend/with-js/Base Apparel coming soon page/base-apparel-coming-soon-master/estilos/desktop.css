@@ -1,0 +1,138 @@
+/* mobile */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --Desaturated-Red: #ce9797;
+  --Soft-Red: #f96262;
+  --Dark-Grayish-Red: #403b3b;
+
+  /* ### Gradients
+
+  - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+  - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  padding: 20px;
+}
+
+.logo-img {
+  align-self: flex-start;
+  width: 105px;
+  margin-left: 20px;
+}
+.hero {
+  size: 100%;
+}
+
+.titlle {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  padding: 15px;
+}
+
+.we-re {
+  color: #ce9797;
+  letter-spacing: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.coming {
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-left: -35px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.soon {
+  font-weight: 600;
+  letter-spacing: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.info {
+  width: 390px;
+  padding: 15px;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+  text-align: center;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.user-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.email-info {
+  padding: 5px;
+  border: solid 1px #ce9797;
+  color: #ce9797;
+  border-color: #ce9797;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 300px;
+  height: 45px;
+  margin-top: -1px;
+}
+
+input.email-info::placeholder {
+  color: #ce9797; /* Substitua pela cor desejada */
+}
+
+.arrow {
+  width: 60px;
+  height: 45px;
+  border-radius: 20px;
+  margin-left: -60px;
+  padding: 14px;
+  background-color: #ce9797;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  width: 65px;
+  height: 55px;
+  border-radius: 20px;
+  margin-left: -60px;
+  padding: 15px;
+  background-color: #e9b1b1ec;
+  transition: 1s;
+}

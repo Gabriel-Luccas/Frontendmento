@@ -1,0 +1,23 @@
+📝Brief
+Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+Your users should be able to:
+
+View the optimal layout for the interface depending on their device's screen size
+See hover and focus states for all interactive elements on the page
+Receive an error message when the form is submitted if:
+The input field is empty
+The email address is not formatted correctly
+Download the starter code and go through the README.md file. This will provide further details about the project. The style-guide.md file is where you'll find colors, fonts, etc.
+
+Want some support on the challenge? Join our community and ask questions in the help channel.
+
+
+💡Ideas to test yourself
+Write your styles using a pre-processor, such as Sass, Less or Stylus
+
+Train your eye for detail by getting your solution as close to the design as you can
+
+Try estimating the time it will take for you to build the project. Then see if the time taken matches up to your estimate. Project estimations are a skill that is often overlooked but is essential for professional developers
