@@ -1,4 +1,4 @@
-/* mobile */
+/* desktop */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 :root {
@@ -26,25 +26,16 @@ body {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.logo {
-  padding: 20px;
-}
-
-.logo-img {
-  align-self: flex-start;
-  width: 105px;
-  margin-left: 20px;
-}
-.hero {
-  size: 100%;
+.img-holder {
+  grid-column: 2;
 }
 
 .titlle {
+  grid-column: 1;
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 50px;
@@ -72,11 +63,9 @@ main {
 }
 
 .info {
+  grid-column: 1;
   margin-top: 10px;
   font-size: 16px;
-}
-
-.info {
   width: 390px;
   padding: 15px;
   font-weight: 400;
@@ -85,16 +74,8 @@ main {
   text-align: center;
 }
 
-footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .user-info {
+  grid-column: 1;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -102,6 +83,8 @@ footer {
   justify-content: space-between;
 }
 .email-info {
+  grid-column: 1;
+  outline-color: #ce9797;
   padding: 5px;
   border: solid 1px #ce9797;
   color: #ce9797;
