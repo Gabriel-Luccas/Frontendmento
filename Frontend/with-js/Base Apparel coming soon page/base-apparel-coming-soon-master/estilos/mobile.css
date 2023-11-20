@@ -137,3 +137,7 @@ input.email-info::placeholder {
   background-color: #e9b1b1ec;
   transition: 1s;
 }
+
+.invalido{
+  color: red;
+}

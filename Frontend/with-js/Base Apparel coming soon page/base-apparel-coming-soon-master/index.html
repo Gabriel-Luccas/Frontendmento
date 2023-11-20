@@ -23,7 +23,6 @@
       media="screen and (max-width: 9999999px)"
     />
 
-
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -41,35 +40,36 @@
     <div class="logo">
       <img class="logo-img" src="images/logo.svg" alt="" />
     </div>
-    
-    
+
     <main>
-      
       <div class="img-holder">
         <img class="hero" src="images/hero-mobile.jpg" alt="" />
       </div>
-      
-      
-        <div class="titlle">
-          <p class="we-re">WE'RE</p>
-          <p class="coming">COMING</p>
-          <p class="soon">SOON</p>
-        </div>
 
-        <div class="info">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </div>
-        
-        <form action="" class="user-info">
-          <input class="email-info" type="email" placeholder="Enter your email" />
-          <button>
-            <img class="arrow" src="images/icon-arrow.svg" alt="" />
-          </button>
+      <div class="titlle">
+        <p class="we-re">WE'RE</p>
+        <p class="coming">COMING</p>
+        <p class="soon">SOON</p>
+      </div>
+
+      <div class="info">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </div>
+
+      <form action="" class="user-info">
+        <input
+          class="email-info"
+          type="email"
+          placeholder="Enter your email"
+          id="email"
+        />
+        <button onclick="verificar_email()">
+          <img class="arrow" src="images/icon-arrow.svg" alt="" />
+        </button>
       </form>
-    
-    
+      <p class="invalido"></p>
     </main>
 
     <footer>
@@ -80,5 +80,15 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script>
+      function verificar_email() {
+        var email = document.getElementById("email").value;
+        var invalido = document.getElementsByClassName("invalido")[0];
+        if (email.indexOf("@") == -1 || email == "") {
+          invalido.innerHTML =
+            "<p>Please enter a valid email address <img src='images/icon-error.svg'></p> ";
+        }
+      }
+    </script>
   </body>
 </html>
