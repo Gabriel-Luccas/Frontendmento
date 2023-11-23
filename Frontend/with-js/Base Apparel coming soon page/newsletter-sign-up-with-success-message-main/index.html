@@ -12,7 +12,16 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="estilos/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="estilos/mobile.css"
+      media="screen and (max-width: 1440px)"
+    />
+    <link
+    rel="stylesheet"
+    href="estilos/desktop.css"
+    media="screen and (min-width: 1440px)"
+  />
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -31,17 +40,22 @@
   </head>
   <body>
     <main>
+      
+      
       <div class="img-conteiner">
         <img
           class="img-illustration"
-          src="assets/images/illustration-sign-up-mobile.svg"
+          src="assets/images/illustration-sign-up-desktop.svg"
           alt=""
         />
       </div>
 
+      
       <div class="text-counteiner">
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="infos">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
         <div class="success">
           <p>
             <img
@@ -49,7 +63,10 @@
               src="assets/images/icon-success.svg"
               alt=""
             />
-            Product discovery and building what matters
+            <span class="feitos"
+              >Product discovery and building what
+              <span class="matters">matters</span></span
+            >
           </p>
           <p>
             <img
@@ -70,12 +87,23 @@
         </div>
       </div>
 
+      
+      
       <div class="form-counteiner">
         <form action="">
-          <label for="emai-suer">Email address</label>
-          <input type="email" />
+          <label for="emai-user">Email address:</label>
+          <input type="email" placeholder="email@company.com" />
+          <input
+            class="sub"
+            type="submit"
+            value="Subscripe to monthly newsletter"
+          />
         </form>
       </div>
+    
+    
+    
+    
     </main>
 
     <div class="attribution">
