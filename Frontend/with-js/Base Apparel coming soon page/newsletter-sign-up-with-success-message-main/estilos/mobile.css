@@ -27,7 +27,7 @@ body {
   --Grey: #9294a0;
   --White: #ffffff;
 }
-main {
+.first-page {
   margin: auto;
   width: 390px;
   height: 800px;
@@ -127,4 +127,50 @@ main {
   width: 330px;
   border-radius: 10px;
   padding: 5px;
+}
+
+/* Page 2 */
+
+.second-page {
+  display: none;
+  align-content: center;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 45px;
+  border-radius: 20px;
+  width: 450px;
+  height: 480px;
+}
+
+.second-page > img {
+  margin-bottom: 20px;
+}
+.second-page > h1 {
+  color: #242742;
+  font-weight: 700;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.second-page > p {
+  color: #242742;
+  font-weight: 700;
+  margin-bottom: 20px;
+  width: 340px;
+}
+
+.second-page > button {
+  margin-top: 20px;
+  background-color: #242742;
+  color: white;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  height: 50px;
+  width: 330px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.second-page > button:hover {
+  cursor: pointer;
 }

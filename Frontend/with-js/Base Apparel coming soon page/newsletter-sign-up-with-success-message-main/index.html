@@ -39,7 +39,7 @@
     </style>
   </head>
   <body>
-    <main class="first-page">
+    <main class="first-page" id="first-page">
       <div class="img-conteiner">
         <img id="imagem" class="img-illustration" src="" alt="" />
       </div>
@@ -86,24 +86,22 @@
             >Email address:<span id="error_mesage"></span>
           </label>
           <input type="email" placeholder="email@company.com" id="email" />
-          <input
-            class="sub"
-            type="submit"
-            value="Subscripe to monthly newsletter"
-            onclick="validar()"
-          />
+          <button class="sub" type="button" onclick="validar()">
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </div>
     </main>
-    <main class="second-page">
-      <img src="" alt="" />
+
+    <main class="second-page" id="second-page">
+      <img src="assets/images/icon-success.svg" alt="" />
       <h1>Thanks for subscribing!</h1>
       <p>
         A confirmation email has been sent to <span id="email_confirm"></span>.
         Please open it and click the button inside to confirm your subscription.
         Dismiss message
       </p>
-      <button>Dismis mensage</button>
+      <button onclick=" dismissMessage()">Dismis mensage</button>
     </main>
 
     <div class="attribution">
@@ -114,6 +112,9 @@
     </div>
     <script>
       let img = document.getElementById("imagem");
+      let ok = false;
+      let page01 = document.getElementById("first-page");
+      let page02 = document.getElementById("second-page");
 
       if (window.innerWidth >= 1440) {
         img.src = "assets/images/illustration-sign-up-desktop.svg";
@@ -129,7 +130,14 @@
         if (user_email.indexOf("@") === -1 || user_email === "") {
           error.innerHTML = "Please enter a valid email :)";
           emailInput.style.outline = "1px solid red";
+        } else {
+          ok = true;
+          page01.style.display = "none";
+          page02.style.display = "block";
         }
+      }
+      function dismissMessage() {
+        page02.style.display = "none";
       }
     </script>
   </body>
