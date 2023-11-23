@@ -18,10 +18,10 @@
       media="screen and (max-width: 1440px)"
     />
     <link
-    rel="stylesheet"
-    href="estilos/desktop.css"
-    media="screen and (min-width: 1440px)"
-  />
+      rel="stylesheet"
+      href="estilos/desktop.css"
+      media="screen and (min-width: 1440px)"
+    />
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -39,18 +39,11 @@
     </style>
   </head>
   <body>
-    <main>
-      
-      
+    <main class="first-page">
       <div class="img-conteiner">
-        <img
-          class="img-illustration"
-          src="assets/images/illustration-sign-up-desktop.svg"
-          alt=""
-        />
+        <img id="imagem" class="img-illustration" src="" alt="" />
       </div>
 
-      
       <div class="text-counteiner">
         <div class="infos">
           <h1>Stay updated!</h1>
@@ -87,23 +80,30 @@
         </div>
       </div>
 
-      
-      
       <div class="form-counteiner">
-        <form action="">
-          <label for="emai-user">Email address:</label>
-          <input type="email" placeholder="email@company.com" />
+        <form onsubmit="validar(); return false;" action="">
+          <label for="emai-user"
+            >Email address:<span id="error_mesage"></span>
+          </label>
+          <input type="email" placeholder="email@company.com" id="email" />
           <input
             class="sub"
             type="submit"
             value="Subscripe to monthly newsletter"
+            onclick="validar()"
           />
         </form>
       </div>
-    
-    
-    
-    
+    </main>
+    <main class="second-page">
+      <img src="" alt="" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <span id="email_confirm"></span>.
+        Please open it and click the button inside to confirm your subscription.
+        Dismiss message
+      </p>
+      <button>Dismis mensage</button>
     </main>
 
     <div class="attribution">
@@ -112,5 +112,25 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script>
+      let img = document.getElementById("imagem");
+
+      if (window.innerWidth >= 1440) {
+        img.src = "assets/images/illustration-sign-up-desktop.svg";
+      } else if (window.innerWidth < 1440) {
+        img.src = "assets/images/illustration-sign-up-mobile.svg";
+      }
+
+      function validar() {
+        let emailInput = document.getElementById("email");
+        let user_email = emailInput.value;
+        let error = document.getElementById("error_mesage");
+
+        if (user_email.indexOf("@") === -1 || user_email === "") {
+          error.innerHTML = "Please enter a valid email :)";
+          emailInput.style.outline = "1px solid red";
+        }
+      }
+    </script>
   </body>
 </html>

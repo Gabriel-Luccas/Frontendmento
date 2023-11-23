@@ -112,6 +112,11 @@ main {
   padding: 5px;
 }
 
+.form-counteiner > form > .sub:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, var(--Tomato), red);
+}
+
 .form-counteiner > form > .sub {
   margin-top: 20px;
   background-color: #242742;
