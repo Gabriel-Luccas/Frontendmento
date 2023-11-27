@@ -1,0 +1,96 @@
+/*  Mobile  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  /* Colors */
+  --Purple: #854dff;
+  --Light_red: #ff575787;
+  --White: #fff;
+  --Off_white: #f0f0f0;
+  --Light_grey: rgb(219, 219, 219);
+  --Smokey_grey: #716f6f;
+  --Off_black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Isso garante que o conteúdo seja centralizado verticalmente em toda a altura da tela */
+  margin: 0; /* Certifique-se de que não há margens padrão do corpo */
+}
+
+main {
+  margin: auto;
+  border: solid 1px #716f6f;
+  min-width: 700px;
+  min-height: 820px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.575);
+}
+
+.user_infp_form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.date_show {
+  color: #716f6f;
+  font-weight: 700;
+}
+
+.input_user {
+  display: block;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  border: solid 1px #716f6f;
+  font-size: 32px;
+}
+
+.button_calculate {
+  display: flex;
+  justify-content: end;
+}
+
+.button_arrow:hover {
+  cursor: pointer;
+}
+.arrow-img {
+  background-color: #854dff;
+  border-radius: 100%;
+  padding: 19px;
+  height: 80px;
+  width: 80px;
+  margin-top: 45px;
+  margin-left: -200px;
+}
+
+.result {
+  margin: auto;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 60px;
+}
+
+.result_ {
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+}
+
+.attribution {
+  margin: auto;
+  align-self: center;
+  position: fixed;
+  bottom: 0;
+}

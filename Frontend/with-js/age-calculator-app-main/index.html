@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="style/mobile.css"
+      media="screen and (max-width: 1440px)"
+    />
 
-  Day
-  DD
+    <link
+      rel="stylesheet"
+      href="style/desktop.css"
+      media="screen and (min-width: 1440px)"
+    />
 
-  Month
-  MM
+    <title>Frontend Mentor | Age calculator app</title>
 
-  Year
-  YYYY
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form class="user_infp_form" action="">
+        <div class="day">
+          <label class="date_show" for="day">Day</label>
+          <input class="input_user" type="number" />
+        </div>
+        <div class="Month">
+          <label class="date_show" for="Month">Month</label>
+          <input class="input_user" type="number" />
+        </div>
+        <div class="Year">
+          <label class="date_show" for="Year">Year</label>
+          <input class="input_user" type="number" />
+        </div>
+      </form>
+      <div class="button_calculate">
+        <button class="button_arrow" ondblclick="ageCalculator()">
+          <img class="arrow-img" src="assets/images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+      <div class="result">
+        <p><span id="show_years" class="result_">-- </span>years</p>
+        <p><span id="month" class="result_">-- </span>months</p>
+        <p><span id="show_days" class="result_">-- </span>days</p>
+      </div>
+      <script>
+        function ageCalculator() {
+          let dataAtual = new Date();
+          let anoAtual = dataAtual.getFullYear();
+          
 
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        }
+      </script>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
