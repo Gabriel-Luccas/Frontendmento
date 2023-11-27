@@ -52,7 +52,7 @@ main {
 .input_user {
   display: block;
   height: 50px;
-  width: 80px;
+  width: 85px;
   border-radius: 10px;
   border: solid 1px #716f6f;
   font-size: 32px;
@@ -86,8 +86,14 @@ main {
 .result_ {
   font-style: italic;
   font-family: "Poppins", sans-serif;
+  color: #854dff;
 }
 
+#error {
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
 .attribution {
   margin: auto;
   align-self: center;

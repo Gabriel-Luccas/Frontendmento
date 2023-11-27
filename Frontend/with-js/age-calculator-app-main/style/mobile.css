@@ -85,6 +85,13 @@ main {
 .result_ {
   font-style: italic;
   font-family: "Poppins", sans-serif;
+  color: #854dff;
+}
+
+#error {
+  text-align: center;
+  color: red;
+  font-size: 20px;
 }
 
 .attribution {

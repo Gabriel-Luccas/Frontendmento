@@ -39,36 +39,64 @@
   </head>
   <body>
     <main>
+      <p id="error"></p>
       <form class="user_infp_form" action="">
         <div class="day">
-          <label class="date_show" for="day">Day</label>
-          <input class="input_user" type="number" />
+          <label class="date_show" for="input_day">Day</label>
+          <input id="input__day" class="input_user" type="number" />
         </div>
         <div class="Month">
-          <label class="date_show" for="Month">Month</label>
-          <input class="input_user" type="number" />
+          <label class="date_show" for="input_month">Month</label>
+          <input id="input__month" class="input_user" type="number" />
         </div>
         <div class="Year">
-          <label class="date_show" for="Year">Year</label>
-          <input class="input_user" type="number" />
+          <label class="date_show" for="input_year">Year</label>
+          <input id="input__year" class="input_user" type="number" />
         </div>
       </form>
       <div class="button_calculate">
-        <button class="button_arrow" ondblclick="ageCalculator()">
+        <button class="button_arrow" onclick="ageCalculator()">
           <img class="arrow-img" src="assets/images/icon-arrow.svg" alt="" />
         </button>
       </div>
       <div class="result">
-        <p><span id="show_years" class="result_">-- </span>years</p>
-        <p><span id="month" class="result_">-- </span>months</p>
-        <p><span id="show_days" class="result_">-- </span>days</p>
+        <p><span id="show_years" class="result_">--</span>years</p>
+        <p><span id="show_month" class="result_">--</span>month</p>
+        <p><span id="show_days" class="result_">--</span>days</p>
       </div>
       <script>
         function ageCalculator() {
           let dataAtual = new Date();
           let anoAtual = dataAtual.getFullYear();
-          
+          let mesAtual = dataAtual.getMonth();
+          let diaAtual = dataAtual.getDate();
+          let input_day = parseInt(document.getElementById("input__day").value);
+          let input_month = parseInt(
+            document.getElementById("input__month").value
+          );
+          let input_Year = parseInt(
+            document.getElementById("input__year").value
+          );
+          let error = document.getElementById("error");
 
+          let user_age = anoAtual - input_Year;
+          let user_month = mesAtual - input_month;
+          let user_day = diaAtual - input_day;
+
+          let show_days = document.getElementById("show_days");
+          let show_month = document.getElementById("show_month");
+          let show_years = document.getElementById("show_years");
+          if (input_day > 31 || input_day < 0) {
+            error.innerHTML = "Digite um dia válido";
+          } else if (input_month > 12 || input_month < 0) {
+            error.innerHTML = "Digite um Mês válido";
+          } else if (input_Year > anoAtual || input_Year < 0) {
+            error.innerHTML = "Digite um Ano válido";
+          } else {
+            show_days.innerText = `${user_day}`;
+            show_month.innerText = `${user_month}`;
+            show_years.innerText = `${user_age}`;
+          }
         }
       </script>
     </main>
