@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+header {
+  margin-bottom: 50px;
+}
+.main {
+  margin: auto;
+  /*  display: flex;  pode funcionar bem para desktop */
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 800px;
+  padding: 12px;
+  border: solid 1px black;
+}
+
+/* Primeira seção  */
+.one {
+  background-color: white;
+}
+
+.item-img {
+  display: flex;
+  justify-content: center;
+}
+
+.img-web {
+  height: 350px;
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.Title > h1 {
+  width: 280px;
+  color: var(--Very-dark-blue);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 0.9;
+  margin-bottom: 15px;
+}
+
+.info > p {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.btn {
+  border: solid 1px black;
+  background-color: var(--Soft-red);
+  color: white;
+  height: 40px;
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--Very-dark-blue);
+}
+
+/* Segunda seção  */
+
+.two {
+  background-color: var(--Very-dark-blue);
+  padding: 15px;
+}
+
+.new-title {
+  color: var(--Soft-orange);
+  margin-bottom: 20px;
+}
+
+.Hydrogen {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.Hydrogen:hover {
+  color: var(--Soft-orange);
+}
+
+.hydrogen-info > p {
+  color: rgba(245, 245, 245, 0.733);
+}
+
+.AI {
+  border-top: solid 2px white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px white;
+  color: white;
+  margin-bottom: 30px;
+}
+.AI:hover {
+  color: var(--Soft-orange);
+}
+
+.Ai-info > P {
+  color: rgba(245, 245, 245, 0.733);
+}
+
+.VC {
+  color: white;
+  margin-bottom: 30px;
+}
+.VC:hover {
+  color: var(--Soft-orange);
+}
+
+.VC-info > P {
+  color: rgba(245, 245, 245, 0.733);
+}
+
+/*Terceira seção  */
+
+.tree {
+  margin-top: 25px;
+}
+
+.topics {
+  display: flex;
+}
+
+.info-topic > h1 {
+  color: var(--Grayish-blue);
+}
+
+.info-topic > h3 {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+
+.info-topic > p {
+  color: var(--Dark-grayish-blue);
+}
+
+.img-topics {
+  height: 100px;
+  margin-right: 10px;
+}
