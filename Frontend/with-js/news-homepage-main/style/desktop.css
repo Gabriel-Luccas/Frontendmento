@@ -31,9 +31,8 @@ header {
   /*  display: flex;  pode funcionar bem para desktop */
   display: flex;
   flex-direction: column;
-  min-width: 400px;
-  max-width: 800px;
-  padding: 12px;
+  width: 1150px;
+  padding: 20px;
   border: solid 1px black;
 }
 
@@ -41,7 +40,7 @@ header {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 1100px;
 }
 .menu {
   height: 30px;
@@ -50,8 +49,8 @@ header {
 
 #options {
   display: flex;
-  width: 300px;
-  height: 1470px;
+  width: 500px;
+  height: 870px;
   flex-direction: column;
   padding: 15px;
   border: solid 1px black;
@@ -73,6 +72,11 @@ header {
 }
 
 /* Primeira seção  */
+
+.control {
+  display: flex;
+  justify-content: space-evenly;
+}
 .one {
   background-color: white;
 }
@@ -80,12 +84,19 @@ header {
 .item-img {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .img-web {
   height: 350px;
-  width: 350px;
+  width: 700px;
   margin-bottom: 10px;
+  margin-left: -60px;
+}
+
+.item-infos {
+  display: flex;
 }
 
 .Title > h1 {
@@ -95,6 +106,7 @@ header {
   font-weight: 800;
   line-height: 0.9;
   margin-bottom: 15px;
+  margin-left: -10px;
 }
 
 .info > p {
@@ -102,6 +114,8 @@ header {
   font-weight: 400;
   margin-bottom: 15px;
   line-height: 1.6;
+  width: 370px;
+  margin-left: 50px;
 }
 
 .btn {
@@ -111,6 +125,7 @@ header {
   height: 40px;
   width: 140px;
   margin-bottom: 15px;
+  margin-left: 50px;
 }
 
 .btn:hover {
@@ -123,6 +138,7 @@ header {
 .two {
   background-color: var(--Very-dark-blue);
   padding: 15px;
+  width: 350px;
 }
 
 .new-title {
@@ -174,7 +190,13 @@ header {
 /*Terceira seção  */
 
 .tree {
-  margin-top: 25px;
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+
+.topic-conteiner {
+  display: flex;
+  justify-content: space-between;
 }
 
 .topics {
@@ -192,6 +214,7 @@ header {
 
 .info-topic > p {
   color: var(--Dark-grayish-blue);
+  width: 180px;
 }
 
 .img-topics {
