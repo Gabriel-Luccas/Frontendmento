@@ -1,0 +1,149 @@
+/*Mobile*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  /*Colors painel*/
+
+  /* Primary*/
+
+  --Red: #f5545281;
+  --Blue: #0a317a;
+
+  /* Neutral */
+
+  --White: #fff;
+  --Very_light_grayish_blue: #f7fafc53;
+  --Light_grayish_blue_1: #e6effa50;
+  --Light_grayish_blue_2: #dee7ed38;
+  --Grayish_blue: #939dae;
+  --Dark_grayish_blue: #5e6778;
+  --Very_dark_blue: #1c202b;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+main {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  width: 375px; /* 375*/
+  height: 1060px;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.h2 > h2 {
+  color: var(--Very_dark_blue);
+}
+
+.number {
+  background-color: var(--Blue);
+  color: #fff;
+  padding: 3.5px;
+  border-radius: 5px;
+}
+
+.read {
+  color: var(--Grayish_blue);
+}
+
+.read:hover {
+  color: var(--Blue);
+  cursor: pointer;
+}
+.msg-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msg {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
+
+.user-infos {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  display: block;
+  margin-left: 53px;
+}
+
+.notification {
+  width: 300px; /*260*/
+}
+
+.profile-picture > img {
+  margin-right: 15px;
+  height: 40px;
+  width: 40px;
+}
+
+.photo-like > img {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+}
+
+.pv-msg > p {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.pv-msg > p:hover {
+  background-color: var(--Grayish_blue);
+}
+
+.user-name {
+  color: #1c202b;
+  font-weight: 800;
+}
+
+.user-name:hover {
+  color: #0a317a;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.link {
+  color: #5e6778;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #0a317a;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.club {
+  color: #0a317a;
+  font-weight: 800;
+  cursor: pointer;
+}
