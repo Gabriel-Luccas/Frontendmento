@@ -1,51 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="style/mobile.css"
+      media="screen and (max-width: 1440px)"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive card details form</title>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!--Section 1 -->
+      <section class="cards">
+        <div class="backcard">
+          <img src="images/bg-card-back.png" alt="" />
+        </div>
+        <div class="frontcard">
+          <img src="images/bg-card-front.png" alt="" />
+          <div class="display">
+            <div>
+              <p id="number">eeeeeeeeee</p>
+            </div>
+            <div class="ddd">
+              <p id="user-name">Vaca magra</p>
+              <p id="date-expery">01/85</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  000
+      <!--Section 2 -->
+      <section class="user-infos">
+        <form action="">
+          <div class="card">
+            <label for="cardHolder_Name" onkeydown="add()"
+              >CARDHOLDER NAME
+            </label>
+            <input placeholder="Your name" type="text" id="cardHolder_Name" />
+          </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+          <div class="card">
+            <label for="Card_Number">CARD NUMBER</label>
+            <input
+              placeholder="000-000-000-000"
+              type="number"
+              id="cardNumber"
+            />
+          </div>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+          <div class="date-cvc">
+            <div class="date">
+              <label for="date-mm ">EXP.DATE(MM/YY)</label>
+              <input placeholder="Month" type="number" id="date/mm" />
+              <input placeholder="Year" type="number" id="date/yy" />
+            </div>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+            <div class="cvc">
+              <label for="cvc">CVC</label>
+              <input id="cvc" placeholder="000" type="number" maxlength="3" />
+            </div>
+          </div>
+        </form>
+        <div class="button-item">
+          <button>Confirm</button>
+        </div>
+      </section>
+      <!-- Completed state start -->
 
-  CVC
-  e.g. 123
+      <section class="complete">
+        <div class="img-item">
+          <img class="ok" src="images/icon-complete.svg" alt="" />
+        </div>
+        <div class="complete-text">
+          <h1>Thank you!</h1>
+          <p>We've added your card details Continue</p>
+        </div>
+        <div class="complete-button">
+          <button>Continue</button>
+        </div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Event listener for the "Confirm" button
+        document
+          .querySelector(".button-item button")
+          .addEventListener("click", function () {
+            // Capture input values when the button is clicked
+            let cardholder = document.getElementById("cardHolder_Name").value;
+            let cardNumber = document.getElementById("cardNumber").value;
+            let cardMonth = document.getElementById("date/mm").value;
+            let cardYear = document.getElementById("date/yy").value;
+            let cardCvc = document.getElementById("cvc").value;
 
-  Confirm
+            // Update display elements
+            let cardNameDisplay = document.getElementById("user-name");
+            let cardNumberDisplay = document.getElementById("number");
+            let cardDate = document.getElementById("date-expery");
 
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            cardNameDisplay.innerText = cardholder;
+            cardNumberDisplay.innerText = cardNumber;
+            cardDate.innerText = `${cardMonth}/${cardYear}`;
+          });
+      });
+    </script>
+  </body>
 </html>

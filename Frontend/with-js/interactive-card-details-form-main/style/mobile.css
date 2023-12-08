@@ -1,0 +1,157 @@
+/* Mobile */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+/*Colors*/
+
+:root {
+  --Linear-gradient-active-input-border: #6448fe to #600594;
+  --Red-input-errors: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+* {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  font-size: 18px;
+}
+
+main {
+  margin-top: 300px;
+  margin: auto;
+  width: 370px;
+  height: 800px;
+}
+/* Section 1 */
+.cards {
+  /*background: linear-gradient(to top,#6448fe,#600594 );*/
+  /*background-image: linear-gradient(#6448fe, #600594);*/
+  background-image: url(/Frontend/with-js/interactive-card-details-form-main/images/bg-main-mobile.png);
+  height: 200px;
+}
+.backcard > img {
+  margin-top: 25px;
+  margin-left: 70px;
+  margin-bottom: -100px;
+  width: 280px;
+  height: 150px;
+}
+.frontcard > img {
+  margin-left: 10px;
+  /*margin-bottom: -100px; por algum motivo vez o texto ficar po cima */
+  margin-bottom: -85px;
+  width: 280px;
+  height: 150px;
+}
+.display {
+  width: 200px;
+  color: var(--Light-grayish-violet);
+  margin-left: 15px;
+}
+.ddd {
+  color: var(--Light-grayish-violet);
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Section 2   */
+.user-infos {
+  margin-top: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: solid 2px var(--Light-grayish-violet);
+  height: 40px;
+  width: 330px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.date-cvc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.date > input {
+  display: block;
+  height: 40px;
+  width: 120px;
+}
+
+.cvc {
+  margin-right: 60px;
+}
+
+.cvc > input {
+  display: block;
+  height: 40px;
+  width: 120px;
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Complet window */
+
+.complete {
+  display: none;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* buttons */
+
+.complete-button > button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 320px;
+  height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+.button-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.button-item > button {
+  background-color: var(--Very-dark-violet);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 320px;
+  height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+label {
+  color: var(--Very-dark-violet);
+}
