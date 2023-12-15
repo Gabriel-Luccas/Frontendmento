@@ -1,0 +1,103 @@
+:root {
+  /*colors*/
+  --Very-Dark-Grayish-Blue: #48556a;
+  --Desaturated-Dark-Blue: #6d7f97;
+  --Grayish-Blue: #9eafc2;
+  --Light-Grayish-Blue: #ecf2f8;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding: 2em;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: var(--Light-Grayish-Blue);
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.534);
+}
+
+/* Firts Section */
+
+.img-cont {
+  display: flex;
+  justify-content: center;
+  background-image: url(/Frontend/with-js/article-preview-component-master/images/drawers.jpg);
+  width: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-left: 1em;
+  padding-right: 3em;
+  padding-top: 9em;
+  padding-bottom: 9em;
+  border-radius: 20px 20px 0px 0px;
+  margin-left: -32px;
+  margin-top: -30px;
+}
+/*Second Section*/
+
+.info-cont {
+  margin-top: 20px;
+}
+
+.info-cont > h2 {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.info-cont > p {
+  color: var(--Desaturated-Dark-Blue);
+  font-weight: 500;
+  width: 80%;
+}
+
+/*Third Section*/
+
+.share-cont {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-item > img {
+  width: 40%;
+  border-radius: 100%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: -130px;
+}
+
+.name {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.date {
+  color: var(--Grayish-Blue);
+  font-weight: 500;
+}
+
+.icon {
+  padding: 1em;
+}
