@@ -16,6 +16,11 @@
       href="style/mobile.css"
       media="screen and (max-width:1440px)"
     />
+    <link
+      rel="stylesheet"
+      href="style/desktop.css"
+      media="screen and (min-width:1440px)"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,28 +46,49 @@
       <!--Fist Section / image-->
       <div class="img-cont"></div>
       <!--Second Section / info product-->
-      <div class="info-cont">
-        <h2>
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h2>
-        <p>
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </p>
+      <div class="test">
+        <div class="info-cont">
+          <h2>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <!-- Third Section / Social -->
+        <div class="share-cont">
+          <div class="img-item">
+            <img src="images/avatar-michelle.jpg" alt="" />
+          </div>
+          <div class="user-info">
+            <div class="name">Michelle Appleton</div>
+            <div class="date">28 Jun 2020</div>
+          </div>
+          <div class="icon-cont">
+            <i class="icon" id="shareOpen"
+              ><img src="images/icon-share.svg" alt=""
+            /></i>
+          </div>
+        </div>
       </div>
-      <!-- Third Section / Social -->
-      <div class="share-cont">
-        <div class="img-item">
-          <img src="images/avatar-michelle.jpg" alt="" />
+      <div class="shareON">
+        <div>
+          <p>SHARE</p>
         </div>
-        <div class="user-info">
-          <div class="name">Michelle Appleton</div>
-          <div class="date">28 Jun 2020</div>
+        <div>
+          <i><img src="images/icon-facebook.svg" alt="" /></i>
         </div>
-        <div class="icon-cont">
-          <i class="icon"><img src="images/icon-share.svg" alt="" /></i>
+        <div>
+          <i><img src="images/icon-pinterest.svg" alt="" /></i>
+        </div>
+        <div>
+          <i><img src="images/icon-twitter.svg" alt="" /></i>
+        </div>
+        <div>
+          <i><img id="shareOff" src="images/icon-share.svg" alt="" /></i>
         </div>
       </div>
     </main>
@@ -72,5 +98,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="js.js"></script>
   </body>
 </html>
