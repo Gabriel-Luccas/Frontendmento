@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráfico de Barras</title>
+  <!-- Inclua a biblioteca Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- O canvas onde o gráfico será renderizado -->
+  <canvas id="meuGrafico"></canvas>
+
+  <script>
+    // Seu conjunto de dados
+    var data = {
+      labels: ['Categoria 1', 'Categoria 2', 'Categoria 3', 'Categoria 4'],
+      datasets: [{
+        label: 'Meu Gráfico de Barras',
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1,
+        data: [12, 19, 3, 5] // Valores associados às categorias
+      }]
+    };
+
+    // Configurações do gráfico
+    var options = {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    };
+
+    // Criação do gráfico
+    var ctx = document.getElementById('meuGrafico').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: data,
+      options: options
+    });
+  </script>
+</body>
+</html>
