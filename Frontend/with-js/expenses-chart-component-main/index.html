@@ -3,56 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="mobile.css">
-
+    <link rel="stylesheet" href="mobile.css" />
     <title>Frontend Mentor | Expenses chart component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
       <section class="my--balance--section">
-        <div
-          class="container"
-          style="display: flex"
-          style="flex-direction: row"
-        >
+        <div class="container">
           <div class="money">
             <p>My balance<span style="display: block"> $921.48</span></p>
           </div>
           <div class="log"><img src="images/logo.svg" alt="" /></div>
         </div>
       </section>
-      <section class="chart">
-
+      <section class="chart--section">
+        <h2 class="fff">Speandng - Last 7 days</h2>
+        <!--Chart starts here-->
+        <div class="chart">
+          <ul class="bars">
+            <li>
+              <div class="bar" data-percentage="39"></div>
+              <span>mon</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="20"></div>
+              <span>tue</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="34"></div>
+              <span>wed</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="45"></div>
+              <span>tru</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="33"></div>
+              <span>fri</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="11"></div>
+              <span>sat</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="22"></div>
+              <span>sun</span>
+            </li>
+          </ul>
+        </div>
+        <!--Chart ends here-->
+        <div class="results">
+          <div class="actual">
+            <p>this month <span class="block display">$xxx</span></p>
+          </div>
+          <div class="last">
+            <p ><span class="por">%x </span><span class="block">last month</span></p>
+          </div>
+        </div>
       </section>
     </main>
-
-    Spending - Last 7 days mon tue wed thu fri sat sun Total this month $478.33
-    +2.4% from last month
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>

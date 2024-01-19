@@ -10,3 +10,131 @@
   --Cream: hsl(27, 66%, 92%);
   --Very-pale-orange: hsl(33, 100%, 98%);
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  background-color: var(--Cream);
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* part one*/
+.my--balance--section {
+  background-color: var(--Soft-red);
+  width: 450px;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.money {
+  color: var(--Very-pale-orange);
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+
+.fff {
+  text-align: center;
+  margin: 20px;
+  color: black;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Chart style */
+.chart--section {
+  background-color: var(--Very-pale-orange);
+  width: 490px;
+  border-radius: 10px;
+}
+.chart {
+  margin-left: -11px;
+  width: 600px;
+  height: 300px;
+  display: block;
+}
+
+.bars {
+  color: var(--Medium-brown);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 500px;
+}
+
+.bars li {
+  display: table-cell;
+  width: 100px;
+  height: 300px;
+  position: relative;
+}
+
+.bars span {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.bars .bar {
+  display: block;
+  background-color: lightblue;
+  width: 35px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 25px;
+  text-align: center;
+}
+
+.bars .bar:hover {
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.block {
+  display: block;
+}
+
+.display {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.por {
+  font-weight: 700;
+  font-size: 25px;
+}
+/* to do
+
+terminar o estilo na ultima parte e ajeitar o chart 
+
+*/
