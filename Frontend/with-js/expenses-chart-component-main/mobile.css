@@ -101,17 +101,31 @@ main {
 
 .bars .bar {
   display: block;
-  background-color: lightblue;
+  background-color: var(--Soft-red);
   width: 35px;
-  height: 100px;
+  height: 0%;
   position: absolute;
   bottom: 0;
   margin-left: 25px;
   text-align: center;
+  transition: 0.5s;
 }
 
 .bars .bar:hover {
   cursor: pointer;
+  background-color: var(--Soft-red);
+  opacity: 0.8;
+}
+
+.bars .bar:hover::before {
+  content: attr(data-percentage);
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -29px;
+  padding: 1px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000;
 }
 
 .results {
@@ -133,8 +147,3 @@ main {
   font-weight: 700;
   font-size: 25px;
 }
-/* to do
-
-terminar o estilo na ultima parte e ajeitar o chart 
-
-*/

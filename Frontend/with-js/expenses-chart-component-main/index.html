@@ -28,31 +28,34 @@
         <div class="chart">
           <ul class="bars">
             <li>
-              <div class="bar" data-percentage="39"></div>
+              <div class="bar" id="bar-mon" data-percentage="$39"></div>
               <span>mon</span>
             </li>
             <li>
-              <div class="bar" data-percentage="20"></div>
+              <div class="bar" id="bar-tue" data-percentage="$20"></div>
               <span>tue</span>
             </li>
             <li>
-              <div class="bar" data-percentage="34"></div>
+              <div class="bar" id="bar-wed" data-percentage="$34"></div>
               <span>wed</span>
             </li>
+            <!-- Update the IDs to use the correct day names -->
             <li>
-              <div class="bar" data-percentage="45"></div>
-              <span>tru</span>
+              <div class="bar" id="bar-thu" data-percentage="$45"></div>
+              <span>thu</span>
             </li>
+            <!-- ... -->
+
             <li>
-              <div class="bar" data-percentage="33"></div>
+              <div class="bar" id="bar-fri" data-percentage="$33"></div>
               <span>fri</span>
             </li>
             <li>
-              <div class="bar" data-percentage="11"></div>
+              <div class="bar" id="bar-sat" data-percentage="$11"></div>
               <span>sat</span>
             </li>
             <li>
-              <div class="bar" data-percentage="22"></div>
+              <div class="bar" id="bar-sun" data-percentage="$22"></div>
               <span>sun</span>
             </li>
           </ul>
@@ -63,10 +66,14 @@
             <p>this month <span class="block display">$xxx</span></p>
           </div>
           <div class="last">
-            <p ><span class="por">%x </span><span class="block">last month</span></p>
+            <p>
+              <span class="por">%x </span><span class="block">last month</span>
+            </p>
           </div>
         </div>
       </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="chart.js"></script>
   </body>
 </html>
