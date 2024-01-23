@@ -139,11 +139,15 @@ main {
 }
 
 .display {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .por {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+#BigExpence {
+  background-color: var(--Cyan);
 }
