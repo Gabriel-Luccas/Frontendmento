@@ -14,6 +14,7 @@
   border: 0;
   box-sizing: border-box;
   font-size: 40px;
+  --Epilogue-500: "Epilogue", sans-serif, 18px, 500;
 }
 
 /* Main--header */
@@ -23,9 +24,103 @@ main {
   margin-top: 100px;
   justify-content: center;
   width: 600px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#snap {
+  font-weight: 700;
+  font-size: 70px;
+  font-family: "Epilogue", sans-serif;
+  font-family: var(--Epilogue-700);
+}
+
+#hum-btn {
+  margin-left: -80px;
+  margin-top: 25px;
+}
+
+#hum-btn > img {
+  height: 28px;
+}
+
+#hum-btn:hover {
+  cursor: pointer;
+}
+
+/*Part One */
+
+#main-img {
+  max-width: 600px;
+}
+
+/*Part two */
+
+.part-two {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.part-two > div > h1 {
+  font-weight: 700;
+}
+
+#learn--btn {
+  color: white;
+  background-color: black;
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#bottom-itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Menu Open */
+
+#open-menu {
+  position: absolute;
+  right: 0;
+  margin-top: -100px;
+  background-color: burlywood;
+  width: 650px;
+  height: 1000px;
+}
+#arrow {
+  height: 10px;
+  margin-left: 10px;
+}
+
+#arrow:hover {
+  cursor: pointer;
+}
+
+#arrow-2 {
+  height: 10px;
+  margin-left: 10px;
+}
+
+#arrow-2:hover {
+  cursor: pointer;
+}
+#features-opn {
+  display: none;
+}
+
+#company-opn {
+  display: none;
 }

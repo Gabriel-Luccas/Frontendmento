@@ -24,28 +24,79 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <link rel="stylesheet" href="mobile.css" />
   </head>
-  <link rel="stylesheet" href="mobile.css" />
   <body>
     <main>
+      <!--Part Header-->
       <header>
-        <div>SNAP</div>
-        <menu>Humburguer</menu>
+        <div id="snap">snap</div>
+        <menu id="menu"
+          ><button id="hum-btn">
+            <img src="images/icon-menu.svg" alt="" />
+          </button>
+          <div id="open-menu">
+            <div><img src="images/icon-close-menu.svg" alt="" /></div>
+            <div class="menu-opn">
+              <div id="features">
+                Features<span
+                  ><img id="arrow" src="images/icon-arrow-down.svg" alt=""
+                /></span>
+                <div id="features-opn">
+                  <div>
+                    <span><img src="images/icon-todo.svg" alt="" /></span>Todo
+                    List
+                  </div>
+                  <div>
+                    <span><img src="images/icon-calendar.svg" alt="" /></span
+                    >calendar
+                  </div>
+                  <div>
+                    <span><img src="images/icon-reminders.svg" alt="" /></span
+                    >Reminders
+                  </div>
+                  <div>
+                    <span><img src="images/icon-planning.svg" alt="" /></span
+                    >Planing
+                  </div>
+                </div>
+              </div>
+              <div id="company">
+                Company<span
+                  ><img id="arrow-2" src="images/icon-arrow-down.svg" alt=""
+                /></span>
+                <div id="company-opn">
+                  <div>
+                    <p>History</p>
+                  </div>
+                  <div>
+                    <p>Our Team</p>
+                  </div>
+                  <div>
+                    <p>blog</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </menu>
       </header>
+      <!--Part One-->
       <section class="part-one">
-        <img src="images/image-hero-mobile.png" alt="" />
+        <img id="main-img" src="images/image-hero-mobile.png" alt="" />
       </section>
+      <!--Part two-->
       <section class="part-two">
         <div>
-          <h1>Make remote work Get your team</h1>
+          <h1>Make remote work</h1>
           <p>
             Get your team in sync no matter your location. Streamline processes,
             create team rituals, and watch productivity soar.
           </p>
-          <button>Learn more</button>
+          <button id="learn--btn">Learn more</button>
         </div>
       </section>
-      <nav>
+      <nav id="bottom-itens">
         <img src="images/client-databiz.svg" alt="" />
         <img src="images/client-audiophile.svg" alt="" />
         <img src="images/client-maker.svg" alt="" />
@@ -59,6 +110,32 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Gabriel Costa Lucas</a>.
     </div>
+    <script>
+      const arrowDisplay = document
+        .getElementById("arrow")
+        .addEventListener("click", display_on_off);
+      const features_opn = document.getElementById("features-opn");
+
+      const arrowDisplayF = document
+        .getElementById("arrow-2")
+        .addEventListener("click", display_on_off_2);
+      const company_opn = document.getElementById("company-opn");
+
+      function display_on_off() {
+        if (features_opn.style.display === "none") {
+          features_opn.style.display = "block";
+        } else {
+          features_opn.style.display = "none";
+        }
+      }
+
+      function display_on_off_2() {
+        if (company_opn.style.display === "none") {
+          company_opn.style.display = "block";
+        } else {
+          company_opn.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
-<!--    Features Company Careers About Login Register in sync-->
