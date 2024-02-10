@@ -36,7 +36,11 @@
             <img src="images/icon-menu.svg" alt="" />
           </button>
           <div id="open-menu">
-            <div><img src="images/icon-close-menu.svg" alt="" /></div>
+            <div>
+              <button id="close-menu">
+                <img src="images/icon-close-menu.svg" alt="" />
+              </button>
+            </div>
             <div class="menu-opn">
               <div id="features">
                 Features<span
@@ -111,6 +115,16 @@
       >. Coded by <a href="#">Gabriel Costa Lucas</a>.
     </div>
     <script>
+      /* Variables selecting elements for interaction */
+
+      const hum_btn = document
+        .getElementById("hum-btn")
+        .addEventListener("click", openMenu);
+
+      const close_menu = document
+        .getElementById("close-menu")
+        .addEventListener("click", closeMenu);
+
       const arrowDisplay = document
         .getElementById("arrow")
         .addEventListener("click", display_on_off);
@@ -121,8 +135,23 @@
         .addEventListener("click", display_on_off_2);
       const company_opn = document.getElementById("company-opn");
 
+      /* Display functions */
+
+      function openMenu() {
+        const open_menu = document.getElementById("open-menu");
+        open_menu.style.display = "block";
+      }
+
+      function closeMenu() {
+        const open_menu = document.getElementById("open-menu");
+        open_menu.style.display = "none";
+      }
+
       function display_on_off() {
-        if (features_opn.style.display === "none") {
+        if (
+          features_opn.style.display === "none" ||
+          features_opn.style.display === ""
+        ) {
           features_opn.style.display = "block";
         } else {
           features_opn.style.display = "none";
@@ -130,7 +159,10 @@
       }
 
       function display_on_off_2() {
-        if (company_opn.style.display === "none") {
+        if (
+          company_opn.style.display === "none" ||
+          company_opn.style.display === ""
+        ) {
           company_opn.style.display = "block";
         } else {
           company_opn.style.display = "none";
