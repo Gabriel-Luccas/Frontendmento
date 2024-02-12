@@ -1,0 +1,100 @@
+📝Brief
+Your challenge is to build out this dashboard and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+If you would like to practice working with JSON data, we provide a local data.json file for the activities. This means you'll be able to pull the data from there instead of using the content in the .html file.
+
+Your users should be able to:
+
+Switch between viewing Daily, Weekly, and Monthly stats
+View the optimal layout for the site depending on their device's screen size
+See hover states for all interactive elements on the page
+Download the starter code and go through the README.md file. This will provide further details about the project. The style-guide.md file is where you'll find colors, fonts, etc.
+
+Want some support on the challenge? Join our community and ask questions in the help channel.
+
+//
+
+posso criar 3 container , e para o layout de mobile colocalos em display flex , collum e para o desktop em row 
+meu main desktop fica em row 
+
+
+
+    5hrs
+    <!-- daily -->
+    Previous - 7hrs
+    <!-- daily -->
+    32hrs
+    <!-- weekly -->
+    Previous - 36hrs
+    <!-- weekly -->
+    103hrs
+    <!-- monthly -->
+    Previous - 128hrs
+    <!-- monthly -->
+
+    Play 1hr
+    <!-- daily -->
+    Previous - 2hrs
+    <!-- daily -->
+    10hrs
+    <!-- weekly -->
+    Previous - 8hrs
+    <!-- weekly -->
+    23hrs
+    <!-- monthly -->
+    Previous - 29hrs
+    <!-- monthly -->
+
+    Study 0hrs
+    <!-- daily -->
+    Previous - 1hr
+    <!-- daily -->
+    4hrs
+    <!-- weekly -->
+    Previous - 7hrs
+    <!-- weekly -->
+    13hrs
+    <!-- monthly -->
+    Previous - 19hrs
+    <!-- monthly -->
+
+    Exercise 1hr
+    <!-- daily -->
+    Previous - 1hr
+    <!-- daily -->
+    4hrs
+    <!-- weekly -->
+    Previous - 5hrs
+    <!-- weekly -->
+    11hrs
+    <!-- monthly -->
+    Previous - 18hrs
+    <!-- monthly -->
+
+    Social 1hr
+    <!-- daily -->
+    Previous - 3hrs
+    <!-- daily -->
+    5hrs
+    <!-- weekly -->
+    Previous - 10hrs
+    <!-- weekly -->
+    21hrs
+    <!-- monthly -->
+    Previous - 23hrs
+    <!-- monthly -->
+
+    Self Care 0hrs
+    <!-- daily -->
+    Previous - 1hr
+    <!-- daily -->
+    2hrs
+    <!-- weekly -->
+    Previous - 2hrs
+    <!-- weekly -->
+    7hrs
+    <!-- monthly -->
+    Previous - 11hrs
+    <!-- monthly -->
