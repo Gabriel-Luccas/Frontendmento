@@ -10,7 +10,7 @@ var expensesData = [
   },
   {
     day: "wed",
-    amount: 52.36,
+    amount: 62.36,
   },
   {
     day: "thu",
