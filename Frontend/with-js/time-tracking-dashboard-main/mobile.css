@@ -25,38 +25,44 @@
 
 /*Main*/
 
-main {
-  border: solid 2px black;
-  margin: auto;
-  padding: 20px;
-  margin-top: 200px;
-  width: 900px;
+body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Main*/
+
+main {
+  margin: auto 0;
+  border: 2px solid black;
+  width: 90%;
+  padding: 20px;
   background-color: var(--Very-dark-blue);
 }
 
 /* User Perfil */
 
-.fix {
-  display: flex;
-  flex-direction: column;
-}
-
 .perfil-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--Desaturated-blue);
   color: white;
-  max-width: 220px;
   border-radius: 20px;
   padding: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   z-index: 1;
 }
 
+.user-name-container {
+  margin-left: -100px;
+}
 .perfil-photo > img {
-  margin-bottom: 40px;
+  margin-top: 40px;
   width: 40%;
-  border: #fff 2px solid;
+  border: #fff 5px solid;
   border-radius: 100%;
 }
 
@@ -66,50 +72,51 @@ main {
 }
 
 .user-name {
-  font-size: 40px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .time-opt {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: var(--Dark-blue);
-  width: 220px;
   padding: 10px;
+  height: 80px;
   margin-top: -14px;
   color: #fff;
   border-radius: 0px 0px 20px 20px;
 }
 
-.time-opt-items {
-  margin: 15px;
-}
-
 /* firts floor*/
-
-/*work*/
-.img-work {
-  position: absolute;
-  margin-top: -3px;
-  margin-left: 23px;
-  background-color: var(--Light-red-work);
-  width: 195px;
-  border-radius: 20px;
-}
-
-.img-work > img {
-  margin-left: 100px;
-}
-
-.work-play-study {
-  display: flex;
-  flex-direction: row;
-}
 
 .subject-item {
   background-color: var(--Dark-blue);
   border-radius: 20px;
   padding: 30px;
-  margin-left: 20px;
-  margin-top: 30px;
-  z-index: 1;
+  margin-top: 35px;
+}
+
+/*Work*/
+.img-work {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 1px;
+  background-color: var(--Light-red-work);
+  border-radius: 20px;
+  width: 84%;
+}
+
+.img-work > img {
+  margin-left: 500px;
+}
+
+#work {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Adicionando position relative */
 }
 
 #work > p {
@@ -129,33 +136,27 @@ main {
   color: var(--Pale-Blue);
 }
 
-/*Play */
-
+/*Play*/
 .img-play {
   position: absolute;
-  margin-top: -3px;
-  margin-left: 243px;
+  margin-top: 20px;
+  margin-left: 1px;
   background-color: var(--Soft-blue--play);
-  width: 185px;
   border-radius: 20px;
+  width: 84%;
 }
 
 .img-play > img {
-  margin-right: -100px;
+  margin-left: 500px;
 }
 
-.work-play-study {
+#play {
+  margin-top: 50px;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-}
-
-.subject-item {
-  background-color: var(--Dark-blue);
-  border-radius: 20px;
-  padding: 30px;
-  margin-left: 20px;
-  margin-top: 30px;
-  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Adicionando position relative */
 }
 
 #play > p {
@@ -176,32 +177,26 @@ main {
 }
 
 /*Study*/
-
 .img-study {
   position: absolute;
-  margin-top: -3px;
-  margin-left: 450px;
+  margin-top: 20px;
+  margin-left: 1px;
   background-color: var(--Light-red-study-);
-  width: 185px;
   border-radius: 20px;
+  width: 84%;
 }
 
 .img-study > img {
-  margin-right: -100px;
+  margin-left: 500px;
 }
 
-.work-play-study {
+#study {
+  margin-top: 50px;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-}
-
-.subject-item {
-  background-color: var(--Dark-blue);
-  border-radius: 20px;
-  padding: 30px;
-  margin-left: 20px;
-  margin-top: 30px;
-  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Adicionando position relative */
 }
 
 #study > p {
@@ -221,40 +216,28 @@ main {
   color: var(--Pale-Blue);
 }
 
-/*Exercice*/
-
-.exercise-social-selfcare {
-  display: flex;
-  flex-direction: row;
-  margin-top: 16px;
-}
-
+/* 2 floor */
+/*Exercise*/
 .img-exercice {
   position: absolute;
-  margin-top: -1px;
-  margin-left: 20px;
+  margin-top: -30px;
+  margin-left: 1px;
   background-color: var(--Lime-green-exercise);
-  width: 190px;
   border-radius: 20px;
+  width: 84%;
 }
 
 .img-exercice > img {
-  margin-right: -100px;
-  border-radius: 20px;
+  margin-left: 500px;
 }
 
-.work-play-exercice {
+#exercice {
+  margin-top: 50px;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-}
-
-.subject-item {
-  background-color: var(--Dark-blue);
-  border-radius: 20px;
-  padding: 30px;
-  margin-left: 20px;
-  margin-top: 30px;
-  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Adicionando position relative */
 }
 
 #exercice > p {
@@ -275,39 +258,26 @@ main {
 }
 
 /*Social*/
-
-.exercise-social-selfcare {
-  display: flex;
-  flex-direction: row;
-  margin-top: 16px;
-}
-
 .img-social {
   position: absolute;
-  margin-top: -3px;
-  margin-left: 233px;
+  margin-top: 25px;
+  margin-left: 1px;
   background-color: var(--Violet-social);
-  width: 190px;
   border-radius: 20px;
+  width: 84%;
 }
 
 .img-social > img {
-  margin-right: -100px;
-  border-radius: 20px;
+  margin-left: 500px;
 }
 
-.work-play-exercice {
+#social {
+  margin-top: 50px;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-}
-
-.subject-item {
-  background-color: var(--Dark-blue);
-  border-radius: 20px;
-  padding: 30px;
-  margin-left: 20px;
-  margin-top: 30px;
-  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Adicionando position relative */
 }
 
 #social > p {
@@ -327,40 +297,27 @@ main {
   color: var(--Pale-Blue);
 }
 
-/*Social*/
-
-.exercise-social-selfcare {
-  display: flex;
-  flex-direction: row;
-  margin-top: 16px;
-}
-
+/*selfcare*/
 .img-selfcare {
   position: absolute;
-  margin-top: -3px;
-  margin-left: 447px;
+  margin-top: 25px;
+  margin-left: 1px;
   background-color: var(--Soft-orange-self-care);
-  width: 185px;
   border-radius: 20px;
+  width: 84%;
 }
 
 .img-selfcare > img {
-  margin-right: -100px;
-  border-radius: 20px;
+  margin-left: 500px;
 }
 
-.work-play-exercice {
+#selfcare {
+  margin-top: 50px;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-}
-
-.subject-item {
-  background-color: var(--Dark-blue);
-  border-radius: 20px;
-  padding: 30px;
-  margin-left: 20px;
-  margin-top: 30px;
-  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Adicionando position relative */
 }
 
 #selfcare > p {
